@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Earth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+
+  <div id="container">
+    <script src="sketch.js"></script>
+    <!-- Textos de ciudades -->
+    <div class="city active" id="madrid">
+      Madrid <span id="time-madrid"></span>
+    </div>
+
+    <div class="city" id="buenosaires">
+      Buenos Aires <span id="time-buenosaires"></span>
+    </div>
+
+    <div class="city" id="ny">
+      New York <span id="time-ny"></span>
+    </div>
+
+    <div class="city" id="tokyo">
+      Tokyo <span id="time-tokyo"></span>
+    </div>
+
+    <!-- Panel información ciudad -->
+    <div id="info-panel">
+      <h2 id="info-title"></h2>
+      <div id="info-content"></div>
+    </div>
+
+    <div id="web-title">
+      <h1>TIME <br>ORBIT</h1>
+      <h3 id="web-description">Interactive WebGL-based application that simulates Earth’s rotation and global time zone variation in real time.</h3>
+    </div>
+
+  </div>
+  
+</body>
+</html>

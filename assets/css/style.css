@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.city {
+  width: 65%;
+  position: absolute;
+  left: 20px;
+  color: rgb(192, 192, 192);
+  font-size: 22px;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: -1px;
+  line-height: 90%;
+  mix-blend-mode: difference;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+/* Ciudad activa (grande arriba) */
+.city.active {
+  top: 20px;
+  font-size: 150px;
+}
+
+/* Las que NO están activas */
+.city:not(.active) {
+  bottom: 20px;
+}
+
+.city:not(.active) {
+  bottom: auto;
+}
+
+.city:not(.active):nth-of-type(1) { bottom: 120px; }
+.city:not(.active):nth-of-type(2) { bottom: 90px; }
+.city:not(.active):nth-of-type(3) { bottom: 60px; }
+.city:not(.active):nth-of-type(4) { bottom: 30px; }
+
+.city span {
+  display: inline;
+}
+
+.city.active span {
+  display: block;
+}
+
+/* ===== PANEL INFO ABAJO DERECHA ===== */
+
+#info-panel {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 320px;
+  color: rgb(192, 192, 192);
+  font-family: 'Helvetica', sans-serif;
+  text-align: right;
+  mix-blend-mode: difference;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+#info-panel h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+
+#info-content p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+/* ===== TÍTULO DE LA PÁGINA WEB ===== */
+#web-title {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 100px;
+  color: white;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: -5px;
+  text-align: right;
+  line-height: 90%;
+}
+
+#web-description {
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 18px;
+  letter-spacing: 0;
+  width: 270px;
+  line-height: 100%;
+  float: right;
+  margin-top: 10px;
+}
